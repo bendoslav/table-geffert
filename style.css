@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 60px);
+  grid-template-rows: repeat(8, 80px);
+  gap: 3px;
+  justify-content: center;
+  margin: 80px auto 20px;
+  /* Zvětšený horní margin pro prostor na římská čísla */
+  position: relative;
+}
+
+.roman-numbers {
+  position: absolute;
+  top: -40px;
+  /* Posun nad tabulku */
+  left: 20%;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(18, 60px);
+  gap: 3px;
+  height: 30px;
+}
+
+.roman-numbers div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 2px;
+  width: 56px;
+  height: 76px;
+}
+
+.element .atomic-number {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  font-size: 10px;
+  color: #666;
+}
+
+.element .symbol {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.element .atomic-mass {
+  font-size: 8px;
+  color: #999;
+}
+
+
+[data-category="alkali-metal"] {
+  background-color: #fb8072;
+}
+
+[data-category="alkaline-earth-metal"] {
+  background-color: #80b1d3;
+}
+
+[data-category="transition-metal"] {
+  background-color: #fdb462;
+}
+
+[data-category="post-transition-metal"] {
+  background-color: #b3de69;
+}
+
+[data-category="metalloid"] {
+  background-color: #fccde5;
+}
+
+[data-category="nonmetal"] {
+  background-color: #8dd3c7;
+}
+
+[data-category="halogen"] {
+  background-color: #bc80bd;
+}
+
+[data-category="noble-gas"] {
+  background-color: #bebada;
+}
+
+[data-category="lanthanoid"] {
+  background-color: #ffed6f;
+}
+
+[data-category="actinoid"] {
+  background-color: #ccebc5;
+}
